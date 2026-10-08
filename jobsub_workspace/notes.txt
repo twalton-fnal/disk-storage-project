@@ -1,0 +1,106 @@
+Enter launch the replay jobs via jobsub
+
+	Running with detector [fd_hd_marley,fardet_hd_marley_mc_detsim_dune10kt_apa1x2x2]
+	Tarring the jobsub workspace folder [ ReplayConfigDir_2026_09_03_08.tgz ]
+
+	Below is the launch command:
+	jobsub_submit -G dune -e BASE_FILENAME=fardet_hd_marley_mc_detsim_dune10kt_apa1x2x2 -e OUTPUT_DIR=/pnfs/dune/scratch/users/twalton/ReplayFiles/fd_hd_marley/2026-09-03-08-20-26 --tar_file_name dropbox:///pnfs/dune/scratch/users/twalton/ReplayTarDir/ReplayConfigDir_2026_09_03_08.tgz -N 100 -e START=500 -e DETECTOR_CONFIG="fd_hd_marley" --OS=EL9 --singularity-image=/cvmfs/singularity.opensciencegrid.org/fermilab/fnal-wn-el9:latest --onsite-only --cpu=4 --timeout=4h file:///exp/dune/app/users/twalton/DiskStorageRDAnalysis/jobsub_workspace/replay.jobsub.sh
+
+
+	Completed launching the justin submission.
+		Message: Copying 4462 bytes file:///nashome/t/twalton/.cache/jobsub_lite/js_2026_09_03_083043_bc4ddf67-7f1e-4455-a5d8-bd80a7236822/replay.jobsub.sh => https://fndcadoor.fnal.gov:2880/dune/persistent/jobsub/jobs/2026_09_03/bc4ddf67-7f1e-4455-a5d8-bd80a7236822/replay.jobsub.sh
+		Message: Copying 12661 bytes file:///nashome/t/twalton/.cache/jobsub_lite/js_2026_09_03_083043_bc4ddf67-7f1e-4455-a5d8-bd80a7236822/simple.sh => https://fndcadoor.fnal.gov:2880/dune/persistent/jobsub/jobs/2026_09_03/bc4ddf67-7f1e-4455-a5d8-bd80a7236822/simple.sh
+		Message: Copying 3547 bytes file:///nashome/t/twalton/.cache/jobsub_lite/js_2026_09_03_083043_bc4ddf67-7f1e-4455-a5d8-bd80a7236822/simple.cmd => https://fndcadoor.fnal.gov:2880/dune/persistent/jobsub/jobs/2026_09_03/bc4ddf67-7f1e-4455-a5d8-bd80a7236822/simple.cmd
+		Message: Publishing hash dune/dd87a1cc4b1b94a35a4c64262221c9e179a1770bc577dfb80056193e1899fe34 to RCDS:
+		Message: Using bearer token located at /tmp/bt_token_dune_Analysis_43472 to authenticate to RCDS
+		Message: Checking to see if uploaded file is published on RCDS
+		Message: Could not locate uploaded file on RCDS.  Will retry in 0 seconds.
+		Message: Could not locate uploaded file on RCDS.  Will retry in 30 seconds.
+		Message: Could not locate uploaded file on RCDS.  Will retry in 30 seconds.
+		Message: Found uploaded file on RCDS.
+		Message: Transferring files to web sandbox...
+		Message: Submitting job(s)....................................................................................................
+		Message: 100 job(s) submitted to cluster 30084869.
+		Message: 
+		Message: =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+		Message: 
+		Message: Use job id 30084869.0@jobsub05.fnal.gov to retrieve output
+		Message: =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+		Message: 
+		Message: 
+		Message: 
+		Error: 
+Output files are in the directory [/pnfs/dune/scratch/users/twalton/ReplayFiles/fd_hd_marley/2026-09-03-08-20-26]
+Exit launch replay jobs for [fd_hd_marley]
+
+Enter launch the replay jobs via jobsub
+
+	Running with detector [fd_hd_marley,fardet_hd_marley_mc_detsim_dune10kt_apa1x2x2]
+	Tarring the jobsub workspace folder [ ReplayConfigDir_2026_09_03_06.tgz ]
+
+	Below is the launch command:
+	jobsub_submit -G dune -e BASE_FILENAME=fardet_hd_marley_mc_detsim_dune10kt_apa1x2x2 -e OUTPUT_DIR=/pnfs/dune/scratch/users/twalton/ReplayFiles/fd_hd_marley/2026-09-03-06-14-49 --tar_file_name dropbox:///pnfs/dune/scratch/users/twalton/ReplayTarDir/ReplayConfigDir_2026_09_03_06.tgz -N 500 -e DETECTOR_CONFIG="fd_hd_marley" --OS=EL9 --singularity-image=/cvmfs/singularity.opensciencegrid.org/fermilab/fnal-wn-el9:latest --onsite-only --cpu=4 --timeout=4h file:///exp/dune/app/users/twalton/DiskStorageRDAnalysis/jobsub_workspace/replay.jobsub.sh
+
+
+	Completed launching the justin submission.
+		Message: Copying 4455 bytes file:///nashome/t/twalton/.cache/jobsub_lite/js_2026_09_03_062556_dfae541a-3381-4b8e-a1d9-9fd0d651c5fb/replay.jobsub.sh => https://fndcadoor.fnal.gov:2880/dune/persistent/jobsub/jobs/2026_09_03/dfae541a-3381-4b8e-a1d9-9fd0d651c5fb/replay.jobsub.sh
+		Message: Copying 3537 bytes file:///nashome/t/twalton/.cache/jobsub_lite/js_2026_09_03_062556_dfae541a-3381-4b8e-a1d9-9fd0d651c5fb/simple.cmd => https://fndcadoor.fnal.gov:2880/dune/persistent/jobsub/jobs/2026_09_03/dfae541a-3381-4b8e-a1d9-9fd0d651c5fb/simple.cmd
+		Message: Copying 12648 bytes file:///nashome/t/twalton/.cache/jobsub_lite/js_2026_09_03_062556_dfae541a-3381-4b8e-a1d9-9fd0d651c5fb/simple.sh => https://fndcadoor.fnal.gov:2880/dune/persistent/jobsub/jobs/2026_09_03/dfae541a-3381-4b8e-a1d9-9fd0d651c5fb/simple.sh
+		Message: Publishing hash dune/58268c3ef9432a36e56cd4c9e90c164e3a58f5f519854223108b54d5887396ce to RCDS:
+		Message: Using bearer token located at /tmp/bt_token_dune_Analysis_43472 to authenticate to RCDS
+		Message: Checking to see if uploaded file is published on RCDS
+		Message: Could not locate uploaded file on RCDS.  Will retry in 0 seconds.
+		Message: Could not locate uploaded file on RCDS.  Will retry in 30 seconds.
+		Message: Could not locate uploaded file on RCDS.  Will retry in 30 seconds.
+		Message: Found uploaded file on RCDS.
+		Message: Transferring files to web sandbox...
+		Message: Submitting job(s)....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+		Message: 500 job(s) submitted to cluster 86506592.
+		Message: 
+		Message: =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+		Message: 
+		Message: Use job id 86506592.0@jobsub01.fnal.gov to retrieve output
+		Message: =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+		Message: 
+		Message: 
+		Message: 
+		Error: 
+Output files are in the directory [/pnfs/dune/scratch/users/twalton/ReplayFiles/fd_hd_marley/2026-09-03-06-14-49]
+Exit launch replay jobs for [fd_hd_marley]
+
+
+Enter launch the replay jobs via jobsub
+
+	Running with detector [fd_hd_marley,fardet_hd_marley_mc_detsim_dune10kt_apa1x2x2]
+	Tarring the jobsub workspace folder [ ReplayConfigDir_2026_09_02_22.tgz ]
+
+	Below is the launch command:
+	jobsub_submit -G dune -e BASE_FILENAME=fardet_hd_marley_mc_detsim_dune10kt_apa1x2x2 -e OUTPUT_DIR=/pnfs/dune/scratch/users/twalton/ReplayFiles/fd_hd_marley/2026-09-02-22-54-42 --tar_file_name dropbox:///pnfs/dune/scratch/users/twalton/ReplayTarDir/ReplayConfigDir_2026_09_02_22.tgz -N 1850 -e DETECTOR_CONFIG="fd_hd_marley" --OS=EL9 --singularity-image=/cvmfs/singularity.opensciencegrid.org/fermilab/fnal-wn-el9:latest --onsite-only --cpu=4 --timeout=4h file:///exp/dune/app/users/twalton/DiskStorageRDAnalysis/jobsub_workspace/replay.jobsub.sh
+
+
+	Completed launching the justin submission.
+		Message: Copying 4455 bytes file:///nashome/t/twalton/.cache/jobsub_lite/js_2026_09_02_225524_b21887dc-2c9a-4102-a2a1-48c1ae83187f/replay.jobsub.sh => https://fndcadoor.fnal.gov:2880/dune/persistent/jobsub/jobs/2026_09_02/b21887dc-2c9a-4102-a2a1-48c1ae83187f/replay.jobsub.sh
+		Message: Copying 3538 bytes file:///nashome/t/twalton/.cache/jobsub_lite/js_2026_09_02_225524_b21887dc-2c9a-4102-a2a1-48c1ae83187f/simple.cmd => https://fndcadoor.fnal.gov:2880/dune/persistent/jobsub/jobs/2026_09_02/b21887dc-2c9a-4102-a2a1-48c1ae83187f/simple.cmd
+		Message: Copying 12649 bytes file:///nashome/t/twalton/.cache/jobsub_lite/js_2026_09_02_225524_b21887dc-2c9a-4102-a2a1-48c1ae83187f/simple.sh => https://fndcadoor.fnal.gov:2880/dune/persistent/jobsub/jobs/2026_09_02/b21887dc-2c9a-4102-a2a1-48c1ae83187f/simple.sh
+		Message: Publishing hash dune/7cb4393e9834729b82803a683c56e8a6474c3e1caa05c3f14133f8f19c7a416d to RCDS:
+		Message: Using bearer token located at /tmp/bt_token_dune_Analysis_43472 to authenticate to RCDS
+		Message: Checking to see if uploaded file is published on RCDS
+		Message: Could not locate uploaded file on RCDS.  Will retry in 0 seconds.
+		Message: Could not locate uploaded file on RCDS.  Will retry in 30 seconds.
+		Message: Found uploaded file on RCDS.
+		Message: Transferring files to web sandbox...
+		Message: Submitting job(s)..........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+		Message: 1850 job(s) submitted to cluster 93578184.
+		Message: 
+		Message: =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+		Message: 
+		Message: Use job id 93578184.0@jobsub02.fnal.gov to retrieve output
+		Message: =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+		Message: 
+		Message: 
+		Message: 
+		Error: 
+Output files are in the directory [/pnfs/dune/scratch/users/twalton/ReplayFiles/fd_hd_marley/2026-09-02-22-54-42]
+Exit launch replay jobs for [fd_hd_marley]
+
+

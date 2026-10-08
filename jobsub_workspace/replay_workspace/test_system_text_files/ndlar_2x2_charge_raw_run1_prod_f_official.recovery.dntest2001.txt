@@ -1,0 +1,17 @@
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/8a/da/binary-0050018-2024_07_12_00_40_23_CDT.hdf5
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/86/5a/binary-0050018-2024_07_12_00_10_20_CDT.hdf5
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/38/5c/binary-0050018-2024_07_12_01_00_25_CDT.hdf5
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/9e/be/binary-0050018-2024_07_12_01_20_27_CDT.hdf5
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/6a/f3/binary-0050018-2024_07_12_00_50_24_CDT.hdf5
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/22/d0/binary-0050018-2024_07_11_23_10_13_CDT.hdf5
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/f9/85/binary-0050018-2024_07_12_03_40_42_CDT.hdf5
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/a9/69/binary-0050018-2024_07_12_02_50_37_CDT.hdf5
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/6e/a7/binary-0050018-2024_07_12_03_10_39_CDT.hdf5
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/0e/76/binary-0050018-2024_07_12_03_00_38_CDT.hdf5
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/f8/89/binary-0050018-2024_07_12_04_00_44_CDT.hdf5
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/44/68/binary-0050018-2024_07_12_03_30_41_CDT.hdf5
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/d1/25/binary-0050018-2024_07_12_03_50_43_CDT.hdf5
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/5c/61/binary-0050018-2024_07_12_02_30_34_CDT.hdf5
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/70/c9/binary-0050018-2024_07_12_02_20_33_CDT.hdf5
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/24/c0/binary-0050018-2024_07_12_03_20_40_CDT.hdf5
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/09/d7/binary-0050018-2024_07_12_02_40_35_CDT.hdf5

@@ -1,0 +1,5 @@
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/fardet-hd/d4/43/anutau_dune10kt_1x2x6_1094_999_20230825T085104Z_gen_g4_detsim_hitreco__20240219T212110Z_reco2.root
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/fardet-hd/ee/0e/anutau_dune10kt_1x2x6_1097_0_20230825T112403Z_gen_g4_detsim_hitreco__20240219T210954Z_reco2.root
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/fardet-hd/f2/25/anutau_dune10kt_1x2x6_1097_100_20230825T112602Z_gen_g4_detsim_hitreco__20240219T211328Z_reco2.root
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/fardet-hd/cd/38/anutau_dune10kt_1x2x6_1097_101_20230825T185348Z_gen_g4_detsim_hitreco__20240219T210902Z_reco2.root
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/fardet-hd/7b/80/anutau_dune10kt_1x2x6_1097_10_20230825T195938Z_gen_g4_detsim_hitreco__20240219T210951Z_reco2.root

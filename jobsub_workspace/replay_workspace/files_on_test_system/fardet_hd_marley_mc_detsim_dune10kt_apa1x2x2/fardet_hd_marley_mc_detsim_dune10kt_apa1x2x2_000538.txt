@@ -1,0 +1,5 @@
+root://dtntest2002.fnal.gov//scratch/users/twalton/dune/persistent/staging/fardet-hd/7a/05/prodmarley_nue_flat_es_dune10kt_1x2x2_20250926T170925Z_gen_002226_supernova_g4_detsim.root
+root://dtntest2002.fnal.gov//scratch/users/twalton/dune/persistent/staging/fardet-hd/07/8b/prodmarley_nue_flat_es_dune10kt_1x2x2_20250926T170925Z_gen_002227_supernova_g4_detsim.root
+root://dtntest2002.fnal.gov//scratch/users/twalton/dune/persistent/staging/fardet-hd/fd/80/prodmarley_nue_flat_es_dune10kt_1x2x2_20250926T170926Z_gen_002228_supernova_g4_detsim.root
+root://dtntest2002.fnal.gov//scratch/users/twalton/dune/persistent/staging/fardet-hd/87/3d/prodmarley_nue_flat_es_dune10kt_1x2x2_20250926T170926Z_gen_002229_supernova_g4_detsim.root
+root://dtntest2002.fnal.gov//scratch/users/twalton/dune/persistent/staging/fardet-hd/68/83/prodmarley_nue_flat_es_dune10kt_1x2x2_20250926T170927Z_gen_002230_supernova_g4_detsim.root

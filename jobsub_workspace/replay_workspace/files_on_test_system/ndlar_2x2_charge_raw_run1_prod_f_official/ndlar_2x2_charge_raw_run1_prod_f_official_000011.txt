@@ -1,0 +1,1 @@
+root://dtntest2001.fnal.gov://scratch/users/twalton/dune/persistent/staging/neardet-2x2-lar-charge/f8/89/binary-0050018-2024_07_12_04_00_44_CDT.hdf5
