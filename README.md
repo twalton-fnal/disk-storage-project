@@ -31,11 +31,22 @@
    1. Setup the replay container
       - source <fts_workspace>/disk-storage-project/setup_replay.sh
    2. Create the Python virtual environment
-      1. cd <fts workspace>
+      1. cd <fts_workspace>
       2. python -m venv transfer_files.venv
       3. source transfer_files.venv/bin/activate
       4. pip install httpx
-4. Write data to dtnest nodes
+4. Write data to dntest nodes
    1. cd <fts_workspace>/disk-storage-project
-   
+   2. python test_submit_fts.py --filename=<filename>
+      * Available filenames
+        * fardet_hd_antineutrino_mc_reco_dune10kt_apa1x2x6.txt
+        * fardet_hd_marley_mc_detsim_dune10kt_apa1x2x2.txt
+        * fardet_vd_antineutrino_mc_reco_dune10kt_apa1x8x6.txt
+        * fardet_vd_neutrino_mc_reco_dune10kt_apa1x8x6.txt  
+        * ndlar_2x2_charge_raw_run1_prod_f_official.txt
+   3. deactivate 
+   4. exit
+5. Check data transfer to dntest node
+   1. cd <fts_workspace>/disk-storage-project
+   2. 
    
