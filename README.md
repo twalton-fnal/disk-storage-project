@@ -37,7 +37,7 @@
       4. pip install httpx
 4. Write data to dntest nodes
    1. cd <fts_workspace>/disk-storage-project
-   2. python test_submit_fts.py --filename=<filename>
+   2. python test_submit_fts.py --filename=<input_filename>
       * Available filenames
         * fardet_hd_antineutrino_mc_reco_dune10kt_apa1x2x6.txt
         * fardet_hd_marley_mc_detsim_dune10kt_apa1x2x2.txt
@@ -48,5 +48,15 @@
    4. exit
 5. Check data transfer to dntest node
    1. cd <fts_workspace>/disk-storage-project
-   2. 
-   
+   2. python check_files_transfer.py --filename=<input_filename>
+      * Available filenames
+        * fardet_hd_antineutrino_mc_reco_dune10kt_apa1x2x6.dntest2001.txt
+        * fardet_hd_marley_mc_detsim_dune10kt_apa1x2x2.dntest2001.txt
+        * fardet_vd_antineutrino_mc_reco_dune10kt_apa1x8x6.dntest2001.txt
+        * fardet_vd_neutrino_mc_reco_dune10kt_apa1x8x6.dntest2001.txt
+        * ndlar_2x2_charge_raw_run1_prod_f_official.dntest2001.txt
+      > Files that failed the write process are stored as text files in the directory
+      > <fts_workspace>/disk-storage-project/jobsub_workspace/missing_test_text_files.
+6. (Optional) Recovery, write missed files to dntest nodes
+   1. python test_submit_fts.py --filename=<input_filename> --recovery
+      > Redo the steps 4, 5 and 6 until all files are on disk. 
