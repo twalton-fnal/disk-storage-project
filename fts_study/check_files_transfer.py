@@ -21,7 +21,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--filename",
         default="fardet_vd_neutrino_mc_reco_dune10kt_apa1x8x6.dntest2001.txt",
-        help="Name of the file that contains the list of LFNs (default: %(default)s)",
+        help="Name of the file that contains the list of files on the dntest nodes" (default: %(default)s)",
     )
 
     return parser.parse_args()
@@ -79,7 +79,7 @@ def main() -> None:
                 if count % 100 == 0:
                     print(f"\t[{count}] gfal-ls success for file [{lfn}]")
             else:
-                failed.append(lfn)
+                failed.append(lfn.lstrip(f"root://dtntest2001.fnal.gov://scratch/users/{USER}") )
 
             count += 1
 

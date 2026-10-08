@@ -50,19 +50,15 @@ def main() -> None:
     )
 
     parser.add_argument(
-        "--user",
-        default="twalton",
-        help="Username that appears in the destination davs URL. (default: %(default)s)",
-    )
-    parser.add_argument(
-        "--file-dir",
-        default="%s" % text_file_dir,
-        help="The file directory that contains the dataset file lists. (default: %(default)s)",
-    )
-    parser.add_argument(
         "--filename",
         default="fardet_vd_neutrino_mc_reco_dune10kt_apa1x8x6.txt",
-        help="Name of the file that holds the list of logical file names. (default: %(default)s)",
+        help="Name of the file that holds the list of the DUNE file names on disk. (default: %(default)s)",
+    )
+
+    parser.add_argument(
+        "--recovery",
+        action="store_true",
+        help="Run recovery for files failing the initial write test.",
     )
 
     parser.add_argument(
@@ -70,19 +66,20 @@ def main() -> None:
         action="store_true",
         help="Print the constructed command but do NOT execute it.",
     )
-    parser.add_argument(
-        "--verbose",
-        action="store_true",
-        help="Print the command before running it.",
-    )
 
     args = parser.parse_args()
 
 
     # ----------------------------------------------------------------------
-    # Build the full path to the LFN list file
+    # Build the full path to the DUNE list file
     # ----------------------------------------------------------------------
-    lfnlist_path = Path(args.file_dir) / args.filename
+    filename = args.filename
+
+    if args.recovery:
+       text_file_dir = text_file_dir.replace("modified_fnal_disk_text_files","missing_test_text_files")
+       filename = args.filename.replace(".txt",".dntest2001.miss.txt")
+
+    lfnlist_path = Path(text_file_dir) / filename
     if not lfnlist_path.is_file():
         parser.error(f"FNAL list file not found: {lfnlist_path}")
 
