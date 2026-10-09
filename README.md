@@ -2,7 +2,7 @@
 
 > This README provides step-by-step instructions for testing DUNE data read and write operations across various disk technologies.
 > Read and write operations are performed using XRootD.
-> These instructions do not cover generating an XRootD file for each DUNE dataset.
+> These instructions do not cover generating an XRootD file for each DUNE dataset or the list containing the files in each dataset.
 > This workflow includes pre-generated DUNE datasets, but additional datasets can be added. For each new dataset, the user must generate an XRootD file containing the read results produced by executing the dataset's file in the appropriate workflow.
 
 ## Dataset Names
@@ -14,8 +14,9 @@
 | <small>fardet-vdz:fardet-vd__fd_mc_2023a_reco2__full-reconstructed__v09_81_00d02__reco2_dunevd10kt_nu_1x8x6_3view_30deg_geov3__prodgenie_nu_dunevd10kt_1x8x6_3view_30deg__out1__v1_official</small> | fd_vd_nu |
 | neardet-2x2-lar-charge:ndlar_2x2_charge_raw_run1_prod_f_official | ndlar_2x2 |
 
-## Writing Data to dntest Nodes
+## Writing Data to dtntest Nodes
 > We use the FTS script provided by the disk storage group.
+> Below are the step-by-step instructions for transferring DUNE data from disk to the test nodes.
 
 1. Checkout repository
    1. mkdir <fts_workspace>
@@ -35,7 +36,7 @@
       2. python -m venv transfer_files.venv
       3. source transfer_files.venv/bin/activate
       4. pip install httpx
-4. Write data to dntest nodes
+4. Write data to dtntest nodes
    1. cd <fts_workspace>/disk-storage-project
    2. python test_submit_fts.py --filename=<input_filename>
       * Available filenames
@@ -57,6 +58,14 @@
         * ndlar_2x2_charge_raw_run1_prod_f_official.dntest2001.txt
       > Files that failed the write process are stored as text files in the directory
       > <fts_workspace>/disk-storage-project/jobsub_workspace/missing_test_text_files.
-6. (Optional) Recovery, write missed files to dntest nodes
+6. (Optional) Recovery, write missed files to dtntest nodes
    1. python test_submit_fts.py --filename=<input_filename> --recovery
-      > Redo the steps 4, 5 and 6 until all files are on disk. 
+      > Redo the steps 4, 5 and 6 until all files are on disk.
+
+## Reading Data from dtntest Nodes
+> We use the replay script provided by the storage group.
+> Additional, the Fermilab workflow management batch system, jobsub is used to submit replay jobs to the grid.
+> Below are the step-by-step instructions for submitting replay jobs to the grid. 
+
+1. Create a list of files for each job.
+   
