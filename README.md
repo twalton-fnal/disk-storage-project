@@ -2,7 +2,8 @@
 
 > This README provides step-by-step instructions for testing DUNE data read and write operations across various disk technologies.
 > Read and write operations are performed using XRootD.
-> These instructions do not cover generating an XRootD file for each DUNE dataset or the list containing the files in each dataset.
+> These instructions do not cover generating an XRootD log file for each DUNE dataset or the list containing the files in each dataset.
+> The XRootD log files and list of DUNE data files are included in the jobsub_workspace/replay_workspace directory.
 > This workflow includes pre-generated DUNE datasets, but additional datasets can be added. For each new dataset, the user must generate an XRootD file containing the read results produced by executing the dataset's file in the appropriate workflow.
 
 ## Dataset Names
@@ -68,4 +69,5 @@
 > Below are the step-by-step instructions for submitting replay jobs to the grid. 
 
 1. Create a list of files for each job.
-   
+   1. cd <fts_workspace>/disk-storage-project/fts_study
+   2.    
