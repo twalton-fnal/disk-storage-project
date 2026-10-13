@@ -86,7 +86,8 @@
         * fardet_hd_marley_mc_detsim_dune10kt_apa1x2x2.dtntest2002.txt
 2. Submit the jobs to the grid
    1. cd <disk_project_workspace>/disk-storage-project/jobsub_workspace
-   2. python replay.submit.jobsub.py --detector=**DETECTOR** --nfiles=**NFILES** 
+   2. python replay.submit.jobsub.py --detector=**DETECTOR** --nfiles=**NFILES**
+      > See the help menu for the available **DETECTOR**.
       > The output JSON files are located in your DUNE scratch area, /pnfs/dune/scratch/users/\<USER\>/ReplayFiles.
       > The parameter --outdir is used to change the default location.
       > Additionally, this script generates a token and stores it in a file in your local area.
