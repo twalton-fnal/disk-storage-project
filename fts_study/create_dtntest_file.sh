@@ -21,10 +21,10 @@ DTN="dtntest2002" #dtntest2001
 while IFS= read -r line; do 
       modified_line="${line/root:\/\/fndcadoor.fnal.gov:1094\/pnfs\/fnal.gov\/usr\//root:\/\/dtntest2001.fnal.gov:\/\/scratch\/users\/${USER}\/}" 
       echo "$modified_line" 
-      done < ${DIR}/${FILENAME} > "${OUTDIR}/${FILENAME/txt/dntest2001.txt}"
+      done < ${DIR}/${FILENAME} > "${OUTDIR}/${FILENAME/txt/${DTN}.txt}"
 
 
 echo -e "\nThe file list generation is completed."
 echo -e "Please check that the URLs for files on the test system are correct."
-echo -e "\t[${OUTDIR}/${FILENAME/txt/dntest2001.txt}]\n\n"
+echo -e "\t[${OUTDIR}/${FILENAME/txt/${DTN}.txt}]\n\n"
 
