@@ -4,7 +4,7 @@
 > Read and write operations are performed using XRootD.
 > These instructions do not cover generating an XRootD log file for each DUNE dataset or the list containing the files in each dataset.
 > The XRootD log files and list of DUNE data files are included in the jobsub_workspace/replay_workspace directory.
-> This workflow includes pre-generated DUNE datasets, but additional datasets can be added. For each new dataset, the user must generate an XRootD file containing the read results produced by executing the dataset's file in the appropriate workflow.
+> This workflow includes pre-generated DUNE datasets, but additional datasets can be added. For each new dataset, the user must generate an XRootD file containing the read results by running the dataset file in the appropriate workflow.
 
 ## Dataset Names
 | Name | Abbreviation |
@@ -16,39 +16,43 @@
 | neardet-2x2-lar-charge:ndlar_2x2_charge_raw_run1_prod_f_official | ndlar_2x2 |
 
 ## Writing Data to dtntest Nodes
-> We use the FTS script provided by the disk storage group.
-> Below are the step-by-step instructions for transferring DUNE data from disk to the test nodes.
+> To transfer data, we use the FTS script, __*fts_token_job.py*__, provided by the disk storage group.
+> Below are the step-by-step instructions for transferring DUNE data from disk to the DTN test nodes.
 
-1. Checkout repository
+1. Check out the repository
    1. mkdir <fts_workspace>
    2. cd <fts_workspace>
-   3. git clone https://github.com/twalton-fnal/disk-storage-project.git
+   3. git clone -b develop https://github.com/twalton-fnal/disk-storage-project.git
 2. Generate tokens
    1. htgettoken -i dune-test -a htvaultprod.fnal.gov -r admin
    2. cp /run/user/43472/bt_u43472 <fts_workspace>/disk-storage-project/fts_study/admin-test.token
    3. htdestroytoken
    4. htgettoken -i dune -a htvaultprod.fnal.gov -r interactive
    5. cp /run/user/43472/bt_u43472 <fts_workspace>/disk-storage-project/fts_study/user-src.dst.token
-3. Setup the workspace
-   1. Setup the replay container
+3. Set up the workspace
+   1. Set up the replay container
       - source <fts_workspace>/disk-storage-project/setup_replay.sh
    2. Create the Python virtual environment
       1. cd <fts_workspace>
       2. python -m venv transfer_files.venv
       3. source transfer_files.venv/bin/activate
       4. pip install httpx
+   3. Do not exit the Python virtual environment
 4. Write data to dtntest nodes
-   1. cd <fts_workspace>/disk-storage-project
-   2. python test_submit_fts.py --filename=<input_filename>
-      * Available filenames
-        * fardet_hd_antineutrino_mc_reco_dune10kt_apa1x2x6.txt
-        * fardet_hd_marley_mc_detsim_dune10kt_apa1x2x2.txt
-        * fardet_vd_antineutrino_mc_reco_dune10kt_apa1x8x6.txt
-        * fardet_vd_neutrino_mc_reco_dune10kt_apa1x8x6.txt  
-        * ndlar_2x2_charge_raw_run1_prod_f_official.txt
-   3. deactivate 
-   4. exit
-5. Check data transfer to dntest node
+   1. Confirm the directory
+      * cd <fts_workspace>/disk-storage-project
+   2. Run the Python wrapper script for **fts_token_job.py**
+      * python test_submit_fts.py --filename=<input_filename>
+        * Available filenames
+          * fardet_hd_antineutrino_mc_reco_dune10kt_apa1x2x6.txt
+          * fardet_hd_marley_mc_detsim_dune10kt_apa1x2x2.txt
+          * fardet_vd_antineutrino_mc_reco_dune10kt_apa1x8x6.txt
+          * fardet_vd_neutrino_mc_reco_dune10kt_apa1x8x6.txt  
+          * ndlar_2x2_charge_raw_run1_prod_f_official.txt
+   3. Exit the Python environment and container
+      1. deactivate 
+      2. exit
+5. Check the data transfer to the dtntest node
    1. cd <fts_workspace>/disk-storage-project
    2. python check_files_transfer.py --filename=<input_filename>
       * Available filenames
@@ -59,13 +63,13 @@
         * ndlar_2x2_charge_raw_run1_prod_f_official.dntest2001.txt
       > Files that failed the write process are stored as text files in the directory
       > <fts_workspace>/disk-storage-project/jobsub_workspace/missing_test_text_files.
-6. (Optional) Recovery, write missed files to dtntest nodes
+7. (Optional) Recovery: write missed files to dtntest nodes
    1. python test_submit_fts.py --filename=<input_filename> --recovery
-      > Redo the steps 4, 5 and 6 until all files are on disk.
+      > Redo steps 4, 5, and 6 until all files are on disk.
 
 ## Reading Data from dtntest Nodes
-> We use the replay script provided by the storage group.
-> Additional, the Fermilab workflow management batch system, jobsub is used to submit replay jobs to the grid.
+> We use the replay script, ***replay.py*** provided by the storage group.
+> Additionally, the Fermilab workflow management batch system, jobsub, is used to submit replay jobs to the grid.
 > Below are the step-by-step instructions for submitting replay jobs to the grid. 
 
 1. Create a list of files for each job.
