@@ -76,7 +76,7 @@
 
 1. Create a batch list of files for each job.
    1. cd <disk_project_workspace>/disk-storage-project/fts_study
-   2. python --filename=\<filename\> --nfiles-per-job=\<N\>
+   2. python make_batch_files.py --filename=\<filename\> --nfiles-per-job=\<N\>
       * Available filenames
         * fardet_hd_antineutrino_mc_reco_dune10kt_apa1x2x6.dtntest2001.txt
         * fardet_hd_marley_mc_detsim_dune10kt_apa1x2x2.dtntest2001.txt
