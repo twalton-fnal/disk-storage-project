@@ -76,7 +76,7 @@
 
 1. Create a batch list of files for each job.
    1. cd <disk_project_workspace>/disk-storage-project/fts_study
-   2. python make_batch_files.py --filename=\<filename\> --nfiles-per-job=\<N\>
+   2. python make_batch_files.py ---filename=\<filename\> --nfiles-per-job=\<N\>
       * Available filenames
         * fardet_hd_antineutrino_mc_reco_dune10kt_apa1x2x6.dtntest2001.txt
         * fardet_hd_marley_mc_detsim_dune10kt_apa1x2x2.dtntest2001.txt
@@ -99,4 +99,7 @@
    1. cd <disk_project_workspace>/disk-storage-project/fts_study
    2. python check_files_replay.py --filename=\<filename\>
       > The available filenames are list in Step 1.
-      > If there are missing 
+      > The script will create a list of missing files.
+      > If there are missing files, redo steps 1 - 3. In step 1., make sure
+      > the command is as follows: python make_batch_files.py --filename=\<filename\> --nfiles-per-job=\<N\> --recovery=1.
+      > Repeat until all files have been read
