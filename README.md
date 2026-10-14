@@ -102,4 +102,4 @@
       > The script will create a list of missing files.
       > If there are missing files, redo steps 1 - 3. In step 1., make sure
       > the command is as follows: python make_batch_files.py --filename=\<filename\> --nfiles-per-job=\<N\> --recovery=1.
-      > Repeat until all files have been read
+      > Repeat until all files have been processed in the ***replay.submit.jobsub.py*** submission.
