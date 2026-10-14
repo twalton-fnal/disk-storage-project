@@ -97,4 +97,6 @@
       > The jobs are monitored using *jobsub_q --user=\<USER\> -G dune*
 3. Check the replay job submission.
    1. cd <disk_project_workspace>/disk-storage-project/fts_study
-   2. 
+   2. python check_files_replay.py --filename=\<filename\>
+      > The available filenames are list in Step 1.
+      > If there are missing 
